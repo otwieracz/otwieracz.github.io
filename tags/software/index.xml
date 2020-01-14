@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on Sławek Gonet</title>
+    <link>https://slawekgonet.pl/tags/software/</link>
+    <description>Recent content in Software on Sławek Gonet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Nov 2019 23:29:10 +0100</lastBuildDate>
+    
+	<atom:link href="https://slawekgonet.pl/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>clj-grpc</title>
+      <link>https://slawekgonet.pl/posts/clj-grpc/</link>
+      <pubDate>Thu, 14 Nov 2019 23:29:10 +0100</pubDate>
+      
+      <guid>https://slawekgonet.pl/posts/clj-grpc/</guid>
+      <description>When it comes to gRPC in Clojure, there is (what seem like) great library clojusc/protobuf. Unfortunately, for someone without any past gRPC experience, it has quite steep learning curve as it&#39;s difficult to relate it directly to official Java documenation available on https://grpc.io.
+I have created clj-grpc partly as a gRPC learning exercise, but mainly to use it in one of our projects in Emergynt. I tried not to reinvent any wheels in process, but just provide hassle-free experience without unnecessary Java interop while strongly reassembling workflow from well documented Java bindings.</description>
+    </item>
+    
+    <item>
+      <title>liberator-swagger</title>
+      <link>https://slawekgonet.pl/posts/liberator-swagger/</link>
+      <pubDate>Mon, 08 Jul 2019 23:39:10 +0200</pubDate>
+      
+      <guid>https://slawekgonet.pl/posts/liberator-swagger/</guid>
+      <description>Swagger become de-facto standard for REST API documentation, so it was obvious choice for describing liberator resources I was exposing in one of Emergynt projects. There is awesome metosin/spec-tools library enabling generation of Swagger definitions from Spec.
+It seemed like good fit to merge liberator with spec-tools:
+ Documentation is written where inside resource definition, keeping code well organized and easy to understand. Various handlers, like handle-not-found or handle-malformed can be generated automatically for meaningful error messages.</description>
+    </item>
+    
+    <item>
+      <title>clj-systemd</title>
+      <link>https://slawekgonet.pl/posts/clj-systemd/</link>
+      <pubDate>Mon, 06 Aug 2018 23:29:10 +0200</pubDate>
+      
+      <guid>https://slawekgonet.pl/posts/clj-systemd/</guid>
+      <description>Simple wrapper on top of thjomnx/java-systemd for Clojure, only partially completed.
+See clj-systemd on GitHub for more info.</description>
+    </item>
+    
+  </channel>
+</rss>

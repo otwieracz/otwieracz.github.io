@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="author" content="Sławomir Gonet">
+		<meta name="description" content="Site Description">
+		<meta name="generator" content="Hugo 0.62.1" />
+		<title>CNC Router - Part 1: Design &middot; Sławek Gonet</title>
+		<link rel="shortcut icon" href="https://slawekgonet.pl/images/favicon.ico">
+		<link rel="stylesheet" href="https://slawekgonet.pl/css/style.css">
+		<link rel="stylesheet" href="https://slawekgonet.pl/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="https://slawekgonet.pl/css/font-awesome.min.css">
+		
+
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://slawekgonet.pl/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://slawekgonet.pl/tags/software'>Software</a>
+	<a href='https://slawekgonet.pl/tags/hardware'>Hardware</a>
+	
+	
+	<a href='https://slawekgonet.pl/about'>About me</a>
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        CNC Router - Part 1: Design
+                    </h1>
+                    <h2 class="headline">
+                    Dec 25, 2019 22:33
+                    · 464 words
+                    · 3 minute read
+                      <span class="tags">
+                      
+                      
+                          
+                              <a href="https://slawekgonet.pl/tags/hardware">Hardware</a>
+                          
+                              <a href="https://slawekgonet.pl/tags/3d-printing">3D Printing</a>
+                          
+                              <a href="https://slawekgonet.pl/tags/cnc-router">CNC Router</a>
+                          
+                      
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    <p><img src="render-side.png" alt="Side render"></p>
+<p>Design of lightweight CNC router rebuilt from all-metal 3D Printer.</p>
+<hr>
+<h2 id="design">Design</h2>
+<p>Major design criteria for CNC router were directly influenced by lessons learned from <a href="https://slawekgonet.pl/posts/all-metal-3d-printer/">All-metal 3D Printer</a></p>
+<ul>
+<li>FDM printer are slow, it's worth sacrificing Z travel for additional rigidity.</li>
+<li>Use single motor for each axis to guarantee squareness after homing.</li>
+<li>As this is still research slash fun project, keep costs low by reusing as many parts as possible.</li>
+<li>Keep it manufacture-able with tools I have, but try limiting places where it will require tuning.</li>
+<li>Try not to over engineer, as it will never be real CNC router without complete rebuild (IMO).</li>
+</ul>
+<p>After spending some time in Fusion 360 I've settled on following design:</p>
+<p><img src="render-overview.png" alt="Overview render">
+<img src="render-side.png" alt="Side render">
+<img src="render-back.png" alt="Back render"></p>
+<p>And bill-of-materials above what I had already were:</p>
+<ul>
+<li>1500mm linear shaft (20mm diameter) for X axis (to be cut in half)</li>
+<li>Two KP001 bearing shaft supports for Z axis screw.</li>
+</ul>
+<h2 id="rigidity-considerations-and-possible-mitigations">Rigidity considerations and possible mitigations</h2>
+<p>Two most important lessons I learned from 3D printer projects were:</p>
+<ul>
+<li>Everything is bending.</li>
+<li>Cheap linear bearings are garbage.</li>
+</ul>
+<p><img src="100N-backplate-loading.png" alt="Loading backplate with 100N"> Loading backplate with 100N with actual materials applied to where it makes difference.</p>
+<h3 id="backlplate-rigidity">Backlplate rigidity</h3>
+<p>Backplate (steel plate to which the tool is mounted) is 4mm thick and I do expect it to bend under load. Simulation in Fusion 360 under around 100N of the load applied at the bottom edge indicated 1.3mm of displacement. I don't know what loads this machine will be experiencing, but I expect to close this plate with L-sections bolted on sides.</p>
+<p>This does not take bearing play into account, so I expect it to be way worse than that - at least out of the box.</p>
+<h3 id="linear-bearings-play">Linear bearings play</h3>
+<p>X and Z axes are running on 20mm linear shafts with two SMA20LGUU bearings (each unit consisting of two standard LM20UU bearings, so 4 in total). Those are low quality, import bearings, so a lot of play is expected - especially without proper preload. If it won't be acceptable, I have two possible backup plans:</p>
+<ul>
+<li>Make do-it-yourself adjustable SMA20LGUU by opening side of each bearing with angle grinder and tapping holes for preload adjustment screws (this will require changing internal LM20UU for LM20AJ)</li>
+<li>Exchange each SMA20LGUU bearing into two SMA20AJ bearings (with adjustable preload).</li>
+</ul>
+<p>I'd probably take first one, as it's cheaper and won't require new mounting holes, which are easy to be screwed up without proper equipment.</p>
+<h3 id="flexing-linear-shafts">Flexing linear shafts</h3>
+<p>What surprises me is marginally low displacement of linear shafts indicated by simulation - which I have hard time believing. This will be kind of &ldquo;last resort&rdquo; improvement possibility which I'd rather avoid due to high expected costs: instead of regular linear shafts, use supported linear shaft and support it on whole length of X axis with 4040 aluminium extrusions - and consequently exchange linear bearings to open variants like SME20OPL.</p>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.github.com/otwieracz">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.linkedin.com/in/slawomirgonet/">
+        <i class="fa fa-linkedin"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2020 <i class="fa fa-heart" aria-hidden="true"></i> Sławomir Gonet
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://slawekgonet.pl/js/jquery-3.3.1.min.js"></script>
+<script src="https://slawekgonet.pl/js/main.js"></script>
+<script src="https://slawekgonet.pl/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+    </body>
+</html>

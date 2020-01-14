@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="author" content="Sławomir Gonet">
+		<meta name="description" content="Site Description">
+		<meta name="generator" content="Hugo 0.62.1" />
+		<title>CNC Router - Part 2: Building hardware &middot; Sławek Gonet</title>
+		<link rel="shortcut icon" href="https://slawekgonet.pl/images/favicon.ico">
+		<link rel="stylesheet" href="https://slawekgonet.pl/css/style.css">
+		<link rel="stylesheet" href="https://slawekgonet.pl/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="https://slawekgonet.pl/css/font-awesome.min.css">
+		
+
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://slawekgonet.pl/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://slawekgonet.pl/tags/software'>Software</a>
+	<a href='https://slawekgonet.pl/tags/hardware'>Hardware</a>
+	
+	
+	<a href='https://slawekgonet.pl/about'>About me</a>
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        CNC Router - Part 2: Building hardware
+                    </h1>
+                    <h2 class="headline">
+                    Jan 6, 2020 21:28
+                    · 333 words
+                    · 2 minute read
+                      <span class="tags">
+                      
+                      
+                          
+                              <a href="https://slawekgonet.pl/tags/hardware">Hardware</a>
+                          
+                              <a href="https://slawekgonet.pl/tags/cnc-router">CNC Router</a>
+                          
+                      
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    <p><img src="intro.JPG" alt="Intro"></p>
+<p>In <a href="https://slawekgonet.pl/posts/cnc-router-p1/">previous entry</a> I have described design and decisions behind CNC router. Here I will be describing recent progress, where the majority of hardware has been built.</p>
+<hr>
+<h2 id="tracing-drilling-tapping">Tracing, drilling, tapping</h2>
+<p>Biggest difference in new design as compared to 3D printer is X and Z carriage made from two 4mm thick steel plates. This makes for really simple, fast and what's most important <em>straight</em> assembly - but only under circumstance that all holes will be drilled precisely at locations. Even slight imprecision between holes within one plate will cause linear bearings on shafts to bind and things to go out of parallel in general - with no way of correcting that. I was well aware of that at the design state, but I made an assumptions that I will be able to mark off all holes precisely by using existing 3D printer for it's last task before it's disassembly.</p>
+<p>Toolpaths were generated with Fusion 360 manufacturing module.</p>
+<p><img src="toolpath-xz.png" alt="XZ backplate toolpath"> XZ backplate (back)
+<img src="toolpath-backplate.png" alt="Tool backplate toolpath"> Tool backplate (front)</p>
+<p><img src="hole-marking-setup.JPG" alt="Marking holes with 3D Printer"> Attaching steel plate to expendable wooden table.</p>
+<p><img src="setting-tool.JPG" alt="Setting tool"> Resetting the tool</p>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/xcNUsrZ3dJY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+ 3D printer executing it's last GCODE before rebuild</p>
+<p>Final result total of 40 precisely located point marks on two steel plates, ready to be drilled and tapped. Other than XZ plates, there are two mounts for X and Z stepper motors.</p>
+<p><img src="marked-holes.JPG" alt="Marked holes">
+<img src="drilling-and-tapping.JPG" alt="Drilling and tapping"></p>
+<h2 id="hardware-assembly">Hardware assembly</h2>
+<p>After ensuring that all new components for manufacture of which 3D printer was necessary, I began disassembling:
+<img src="disassemble-in-progress.JPG" alt="Disassembly"></p>
+<p>Immediately after that, construction of new frame was put together:
+<img src="frame-in-progress.JPG" alt="New frame"></p>
+<p>Having all that finished, I started build XZ subassembly, putting together steel plates, linear bearings, shafts (cut to length) and rest of parts, following Fusion 3600 design.</p>
+<p><img src="drilled-and-tapped.JPG" alt="Drilled and tapped"> All new components drilled and tapped
+<img src="z-gantry-wip-1.JPG" alt="XZ subassembly 1">
+<img src="z-gantry-wip-2.JPG" alt="XZ subassembly 2"></p>
+<p>Completed XZ assembly turned out surprisingly nice. It all took literally 20 minutes of work to put this together - I am really not used to such kind of precision, using my now-gone, metal 3D printer for hole tracing was 10/10 idea.
+<img src="z-gantry-assembled.JPG" alt="XZ subassembly (assembled)"></p>
+<p>All that was left is to put it on X shafts and call it a day:
+<img src="z-gantry-mounted.JPG" alt="XZ mounted on frame"></p>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.github.com/otwieracz">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.linkedin.com/in/slawomirgonet/">
+        <i class="fa fa-linkedin"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2020 <i class="fa fa-heart" aria-hidden="true"></i> Sławomir Gonet
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://slawekgonet.pl/js/jquery-3.3.1.min.js"></script>
+<script src="https://slawekgonet.pl/js/main.js"></script>
+<script src="https://slawekgonet.pl/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="author" content="Sławomir Gonet">
+		<meta name="description" content="Site Description">
+		<meta name="generator" content="Hugo 0.62.1" />
+		<title>All-metal 3D Printer &middot; Sławek Gonet</title>
+		<link rel="shortcut icon" href="https://slawekgonet.pl/images/favicon.ico">
+		<link rel="stylesheet" href="https://slawekgonet.pl/css/style.css">
+		<link rel="stylesheet" href="https://slawekgonet.pl/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="https://slawekgonet.pl/css/font-awesome.min.css">
+		
+
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://slawekgonet.pl/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://slawekgonet.pl/tags/software'>Software</a>
+	<a href='https://slawekgonet.pl/tags/hardware'>Hardware</a>
+	
+	
+	<a href='https://slawekgonet.pl/about'>About me</a>
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        All-metal 3D Printer
+                    </h1>
+                    <h2 class="headline">
+                    Nov 11, 2018 10:30
+                    · 511 words
+                    · 3 minute read
+                      <span class="tags">
+                      
+                      
+                          
+                              <a href="https://slawekgonet.pl/tags/3d-printing">3D Printing</a>
+                          
+                              <a href="https://slawekgonet.pl/tags/hardware">Hardware</a>
+                          
+                              <a href="https://slawekgonet.pl/tags/projects-from-past">Projects from past</a>
+                          
+                      
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    <p><img src="complete.jpg" alt="Complete"></p>
+<p>Back in 2017 there were no cheap-and-good 3D printer readily available on the market. Basically all that was available were budget Prusa clones, but neither rigid nor especially cheap. That's why I started designing my own construction of heavy-weight all-metal FDM 3D printer with some lightweight CNC routing in mind.</p>
+<p>As it turned out, it was rather nice 3D printer but not very practical CNC router.</p>
+<p><em>NOTE</em>: This is post-factum description of historical project, so it's already known how it turned out.</p>
+<hr>
+<h2 id="design">Design</h2>
+<p>By the time I have been designing this printer, only 3D modelling tool I had any grasp of was Blender. It was not especially delightful experience, but I've made my way through it somehow.</p>
+<p>One of first concepts was cubical in form, with moving printing table as X axis:
+<img src="concept.png" alt="First Concept" title="First concept"> First concept</p>
+<p>Another one had X axis stacked on top of Y and Z, enabling heated bed to be immobile and rigid. Although it sounded great, it required a lot of linear bearings and rods, essentially skyrocketing overall price tag. Taking this into consideration, I have settled on more &ldquo;standard&rdquo; approach with Y being mobile heatbed, X being stacked on top of Z powered by two trapezoidal screws. As it turned out, it wasn't the smartest choice for a CNC router.</p>
+<p><img src="blender-render.png" alt="Selected Design" title="Selected design"> Design I'll be proceeding with</p>
+<h2 id="build">Build</h2>
+<p>Not much to talk about - starting with concept shown above, I've made my way through build. General idea was to keep things adjustable, as I had no tools to hard-build everything precisely and straight enough.</p>
+<ul>
+<li>Frame made of 4040 aluminium extrusions</li>
+<li>20mm linear rods with linear bearings</li>
+<li>Z powered by 10mm trapezoidal screws</li>
+<li>X and Y controlled via rack and pinion</li>
+<li>Everything driven with Arduino+RAMPS (later exchanged for MKS Sbase running Smoothieware)</li>
+</ul>
+<p><img src="build-side.jpg" alt="Vertical Stack" title="Vertical stack"> Vertical Stack, test fitting after cutting</p>
+<p><img src="z-details-1.jpg" alt="Z bottom" title="Z axis movement details, bottom"> Details of Z axis mount, bottom</p>
+<p><img src="z-details-2.jpg" alt="Z top" title="Z axis movement details, top"> Details of Z axis mount, top</p>
+<p><img src="build-x-gantry.jpg" alt="X gantry build" title="X Gantry build"> Building X gantry</p>
+<p><img src="test-fit.jpg" alt="Test fit" title="Test fit"> Test fit</p>
+<p><img src="build-x-gantry-test-fit.jpg" alt="X gantry build test-fit" title="X Gantry build test-fit"> Testing X gantry fit</p>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/lQJjN-YSzV4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+ Powering and testing X gantry (with zip-ties!)</p>
+<p><img src="complete.jpg" alt="Complete" title="Ready for printing"> Ready for printing</p>
+<h2 id="printing">Printing</h2>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/M7QkbgZzZfk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="trying-to-cut-wood">Trying to cut wood</h2>
+<h2 id="cutting-wood">Cutting wood</h2>
+<h2 id="conclusions">Conclusions</h2>
+<p>I have recently bought another 3D printer, for smaller work (Anycubic Kossel Linear). This changed my priorities a bit - by having separate general purpose 3D printer, I could sacrifice some FDM-specific capabilities for usability as CNC router. That's how rebuilding this printer into CNC router become a thing.</p>
+<p>As a 3D printer, certainly great thing here was rigidity - after bed has been leveled, there's no way something become loose or required repeated calibration. I could keep printing repeatedly remotely, with just family members keeping an eye if nothing's on fire.</p>
+<p>However, dual Z screws and motors become real issue for any milling operations. Asymmetrical load in Z axis (operations like drilling with X axis being far of center) easily caused opposite motor to lose steps - virtually rendering machine useless until I re-level Z axis again. I could fight that with better stepper control and multiple Z endstops, but it just kept bugging me.</p>
+<p>See <a href="https://slawekgonet.pl/posts/cnc-router-p1/">CNC Router - Part 1</a>, where I track progress rebuilding this machine into lightweight, desktop CNC router.</p>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.github.com/otwieracz">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.linkedin.com/in/slawomirgonet/">
+        <i class="fa fa-linkedin"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2020 <i class="fa fa-heart" aria-hidden="true"></i> Sławomir Gonet
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://slawekgonet.pl/js/jquery-3.3.1.min.js"></script>
+<script src="https://slawekgonet.pl/js/main.js"></script>
+<script src="https://slawekgonet.pl/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+    </body>
+</html>

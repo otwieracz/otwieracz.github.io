@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Sławek Gonet</title>
+    <link>https://slawekgonet.pl/tags/</link>
+    <description>Recent content in Tags on Sławek Gonet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Jan 2020 21:28:29 +0100</lastBuildDate>
+    
+	<atom:link href="https://slawekgonet.pl/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CNC Router</title>
+      <link>https://slawekgonet.pl/tags/cnc-router/</link>
+      <pubDate>Mon, 06 Jan 2020 21:28:29 +0100</pubDate>
+      
+      <guid>https://slawekgonet.pl/tags/cnc-router/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hardware</title>
+      <link>https://slawekgonet.pl/tags/hardware/</link>
+      <pubDate>Mon, 06 Jan 2020 21:28:29 +0100</pubDate>
+      
+      <guid>https://slawekgonet.pl/tags/hardware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3D Printing</title>
+      <link>https://slawekgonet.pl/tags/3d-printing/</link>
+      <pubDate>Wed, 25 Dec 2019 22:33:38 +0100</pubDate>
+      
+      <guid>https://slawekgonet.pl/tags/3d-printing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clojure</title>
+      <link>https://slawekgonet.pl/tags/clojure/</link>
+      <pubDate>Thu, 14 Nov 2019 23:29:10 +0100</pubDate>
+      
+      <guid>https://slawekgonet.pl/tags/clojure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>https://slawekgonet.pl/tags/software/</link>
+      <pubDate>Thu, 14 Nov 2019 23:29:10 +0100</pubDate>
+      
+      <guid>https://slawekgonet.pl/tags/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects from past</title>
+      <link>https://slawekgonet.pl/tags/projects-from-past/</link>
+      <pubDate>Sun, 11 Nov 2018 10:30:10 +0100</pubDate>
+      
+      <guid>https://slawekgonet.pl/tags/projects-from-past/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

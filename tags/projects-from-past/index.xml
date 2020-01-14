@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects from past on Sławek Gonet</title>
+    <link>https://slawekgonet.pl/tags/projects-from-past/</link>
+    <description>Recent content in Projects from past on Sławek Gonet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Nov 2018 10:30:10 +0100</lastBuildDate>
+    
+	<atom:link href="https://slawekgonet.pl/tags/projects-from-past/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>All-metal 3D Printer</title>
+      <link>https://slawekgonet.pl/posts/all-metal-3d-printer/</link>
+      <pubDate>Sun, 11 Nov 2018 10:30:10 +0100</pubDate>
+      
+      <guid>https://slawekgonet.pl/posts/all-metal-3d-printer/</guid>
+      <description>Back in 2017 there were no cheap-and-good 3D printer readily available on the market. Basically all that was available were budget Prusa clones, but neither rigid nor especially cheap. That&#39;s why I started designing my own construction of heavy-weight all-metal FDM 3D printer with some lightweight CNC routing in mind.
+As it turned out, it was rather nice 3D printer but not very practical CNC router.
+NOTE: This is post-factum description of historical project, so it&#39;s already known how it turned out.</description>
+    </item>
+    
+  </channel>
+</rss>

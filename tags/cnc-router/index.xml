@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CNC Router on Sławek Gonet</title>
+    <link>https://slawekgonet.pl/tags/cnc-router/</link>
+    <description>Recent content in CNC Router on Sławek Gonet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Jan 2020 21:28:29 +0100</lastBuildDate>
+    
+	<atom:link href="https://slawekgonet.pl/tags/cnc-router/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CNC Router - Part 2: Building hardware</title>
+      <link>https://slawekgonet.pl/posts/cnc-router-p2/</link>
+      <pubDate>Mon, 06 Jan 2020 21:28:29 +0100</pubDate>
+      
+      <guid>https://slawekgonet.pl/posts/cnc-router-p2/</guid>
+      <description>In previous entry I have described design and decisions behind CNC router. Here I will be describing recent progress, where the majority of hardware has been built.
+ Tracing, drilling, tapping Biggest difference in new design as compared to 3D printer is X and Z carriage made from two 4mm thick steel plates. This makes for really simple, fast and what&#39;s most important straight assembly - but only under circumstance that all holes will be drilled precisely at locations.</description>
+    </item>
+    
+    <item>
+      <title>CNC Router - Part 1: Design</title>
+      <link>https://slawekgonet.pl/posts/cnc-router-p1/</link>
+      <pubDate>Wed, 25 Dec 2019 22:33:38 +0100</pubDate>
+      
+      <guid>https://slawekgonet.pl/posts/cnc-router-p1/</guid>
+      <description>Design of lightweight CNC router rebuilt from all-metal 3D Printer.
+ Design Major design criteria for CNC router were directly influenced by lessons learned from All-metal 3D Printer
+ FDM printer are slow, it&#39;s worth sacrificing Z travel for additional rigidity. Use single motor for each axis to guarantee squareness after homing. As this is still research slash fun project, keep costs low by reusing as many parts as possible. Keep it manufacture-able with tools I have, but try limiting places where it will require tuning.</description>
+    </item>
+    
+  </channel>
+</rss>
