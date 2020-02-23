@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/otwieracz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://slawekgonet.pl
+  * I am otwieracz (https://keybase.io/otwieracz) on keybase.
+  * I have a public key ASD8Ek8_R20kFerkEv0aB7xLTikw0PhWskGoYxiKKPK84Ao
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120e83b9341c448b6a82c920d88cfca31e595f3148904848c7cd9ccde05ae73e3200a",
+      "host": "keybase.io",
+      "kid": "0120fc124f3f476d2415eae412fd1a07bc4b4e2930d0f856b241a863188a28f2bce00a",
+      "uid": "25605509dcd8e32af60c83aa14281619",
+      "username": "otwieracz"
+    },
+    "merkle_root": {
+      "ctime": 1582468680,
+      "hash": "f2bc8a52d278f1eb524a84768b31b14875c56427d341e41af4d319fb87a78cb80df6d88d67b90c7c49aa23c15ecd18dca433767683a54c447ee76547932d91e8",
+      "hash_meta": "702bd7b396f990a990528813cc4937658116d42a56a417967f79a30bfa997f4b",
+      "seqno": 14707507
+    },
+    "service": {
+      "entropy": "OJrOyltRbHD+2cKjS2D3ZJlq",
+      "hostname": "slawekgonet.pl",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.2.0"
+  },
+  "ctime": 1582468700,
+  "expire_in": 504576000,
+  "prev": "568078c412f889eed9b7e62aa743c1cc2280375e7d3af92374e5821d8769b3ce",
+  "seqno": 20,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg/BJPP0dtJBXq5BL9Gge8S04pMND4VrJBqGMYiijyvOAKp3BheWxvYWTESpcCFMQgVoB4xBL4ie7Zt+Yqp0PBzCKAN159OvkjdOWCHYdps87EIM7CHvnoSr1G7+w/3vpLwNddYZY1FkmSApdzmkgX/imRAgHCo3NpZ8RArEOlF/NKu/DwuwAVCAhjmdValWdFByjWPFNjaoziW1sbve+W7JxCUlJK2HSkeZ2Uir77QdbM41q+o9SJF3NRBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIHoWKn2T+yUgymV5P4hNCu1sMjKdk/iV7gbE0dZMm3PBo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/otwieracz
+
+==================================================================
