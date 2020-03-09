@@ -30,18 +30,9 @@
     </item>
     
     <item>
-      <title>3D Printing</title>
-      <link>https://slawekgonet.pl/tags/3d-printing/</link>
-      <pubDate>Wed, 25 Dec 2019 22:33:38 +0100</pubDate>
-      
-      <guid>https://slawekgonet.pl/tags/3d-printing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Clojure</title>
       <link>https://slawekgonet.pl/tags/clojure/</link>
-      <pubDate>Thu, 14 Nov 2019 23:29:10 +0100</pubDate>
+      <pubDate>Thu, 05 Mar 2020 23:29:10 +0100</pubDate>
       
       <guid>https://slawekgonet.pl/tags/clojure/</guid>
       <description></description>
@@ -50,9 +41,27 @@
     <item>
       <title>Software</title>
       <link>https://slawekgonet.pl/tags/software/</link>
-      <pubDate>Thu, 14 Nov 2019 23:29:10 +0100</pubDate>
+      <pubDate>Thu, 05 Mar 2020 23:29:10 +0100</pubDate>
       
       <guid>https://slawekgonet.pl/tags/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://slawekgonet.pl/tags/python/</link>
+      <pubDate>Tue, 03 Mar 2020 21:12:17 +0100</pubDate>
+      
+      <guid>https://slawekgonet.pl/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3D Printing</title>
+      <link>https://slawekgonet.pl/tags/3d-printing/</link>
+      <pubDate>Wed, 25 Dec 2019 22:33:38 +0100</pubDate>
+      
+      <guid>https://slawekgonet.pl/tags/3d-printing/</guid>
       <description></description>
     </item>
     

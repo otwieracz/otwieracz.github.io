@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Sławek Gonet</title>
+    <link>https://slawekgonet.pl/tags/python/</link>
+    <description>Recent content in Python on Sławek Gonet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Mar 2020 21:12:17 +0100</lastBuildDate>
+    
+	<atom:link href="https://slawekgonet.pl/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>burp_exporter</title>
+      <link>https://slawekgonet.pl/posts/burp-exporter/</link>
+      <pubDate>Tue, 03 Mar 2020 21:12:17 +0100</pubDate>
+      
+      <guid>https://slawekgonet.pl/posts/burp-exporter/</guid>
+      <description>Prometheus exporter for BURP backup program burp written in Python.
+burp_exporter operates directly on BURP spool directory thus has to be running on the same machine as server, but does not require complex configuration as a client of monitor protocol.
+See burp_exporter on GitHub for more info.</description>
+    </item>
+    
+  </channel>
+</rss>

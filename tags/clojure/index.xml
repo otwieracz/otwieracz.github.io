@@ -6,10 +6,23 @@
     <description>Recent content in Clojure on Sławek Gonet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Nov 2019 23:29:10 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2020 23:29:10 +0100</lastBuildDate>
     
 	<atom:link href="https://slawekgonet.pl/tags/clojure/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>spec-debug</title>
+      <link>https://slawekgonet.pl/posts/spec-debug/</link>
+      <pubDate>Thu, 05 Mar 2020 23:29:10 +0100</pubDate>
+      
+      <guid>https://slawekgonet.pl/posts/spec-debug/</guid>
+      <description>Debug helper which I&#39;ve been always missing - minimal helper for instrumenting (clojure.spec.alpha/valid?) with more verbose output.
+This should be treated as debug facility and not be enabled on production by default - especially, when there are spec/valid? statements expected to fail non-catastrophically used in performace-sensitive parts of code.
+Kudos to @github/bhb for expound library which made this little helper possible.
+My setup Following profiles.clj configuration:
+$ cat .</description>
+    </item>
     
     <item>
       <title>clj-grpc</title>

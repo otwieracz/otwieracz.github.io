@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="author" content="Sławomir Gonet">
+		<meta name="description" content="Site Description">
+		<meta name="generator" content="Hugo 0.62.1" />
+		<title>spec-debug &middot; Sławek Gonet</title>
+		<link rel="shortcut icon" href="https://slawekgonet.pl/images/favicon.ico">
+		<link rel="stylesheet" href="https://slawekgonet.pl/css/style.css">
+		<link rel="stylesheet" href="https://slawekgonet.pl/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="https://slawekgonet.pl/css/font-awesome.min.css">
+		
+
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://slawekgonet.pl/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://slawekgonet.pl/tags/software'>Software</a>
+	<a href='https://slawekgonet.pl/tags/hardware'>Hardware</a>
+	
+	
+	<a href='https://slawekgonet.pl/about'>About me</a>
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        spec-debug
+                    </h1>
+                    <h2 class="headline">
+                    Mar 5, 2020 23:29
+                    · 118 words
+                    · 1 minute read
+                      <span class="tags">
+                      
+                      
+                          
+                              <a href="https://slawekgonet.pl/tags/software">Software</a>
+                          
+                              <a href="https://slawekgonet.pl/tags/clojure">Clojure</a>
+                          
+                      
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    <a href="https://clojars.org/otwieracz/spec-debug">
+  <img src="https://img.shields.io/clojars/v/otwieracz/spec-debug.svg" style="width: 40%" alt="otwieracz/spec-debug"></img>
+</a>
+<p>Debug helper which I've been always missing - minimal helper for instrumenting <code>(clojure.spec.alpha/valid?)</code> with more verbose output.</p>
+<p>This should be treated as debug facility and not be enabled on production by default - especially, when there are <code>spec/valid?</code> statements expected to fail non-catastrophically used in performace-sensitive parts of code.</p>
+<p>Kudos to <a href="https://github.com/bhb">@github/bhb</a> for <a href="https://github.com/bhb/expound">expound</a> library which made this little helper possible.</p>
+<h2 id="my-setup">My setup</h2>
+<p>Following <code>profiles.clj</code> configuration:</p>
+<pre><code>$ cat .lein/profiles.clj
+{:user {:dependencies [[org.clojure/tools.trace &quot;0.7.10&quot;]
+                       [otwieracz/spec-debug &quot;0.1.0&quot;]]
+        :injections [(require '[clojure.tools.trace :refer [trace-vars untrace-vars]])
+                     (require '[otwieracz.spec-debug :refer [enable-spec-debug! disable-spec-debug!]])]
+        :repl-options {:timeout 360000}
+        :aot :all}}
+</code></pre><p>Enables use of <code>enable-spec-debug!</code> and <code>trace-vars</code> from tools.trace in every Leiningen project, drastically improving debugging experience - no more guesswork.</p>
+<p>See <a href="http://github.com/otwieracz/spec-debug">spec-debug on GitHub</a> for more info.</p>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.github.com/otwieracz">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.linkedin.com/in/slawomirgonet/">
+        <i class="fa fa-linkedin"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2020 <i class="fa fa-heart" aria-hidden="true"></i> Sławomir Gonet
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://slawekgonet.pl/js/jquery-3.3.1.min.js"></script>
+<script src="https://slawekgonet.pl/js/main.js"></script>
+<script src="https://slawekgonet.pl/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+    </body>
+</html>

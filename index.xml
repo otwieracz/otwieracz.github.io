@@ -22,6 +22,30 @@ Wiring electronics Based on All-metal 3D Printer experiences, single electronics
     </item>
     
     <item>
+      <title>spec-debug</title>
+      <link>https://slawekgonet.pl/posts/spec-debug/</link>
+      <pubDate>Thu, 05 Mar 2020 23:29:10 +0100</pubDate>
+      
+      <guid>https://slawekgonet.pl/posts/spec-debug/</guid>
+      <description>Debug helper which I&#39;ve been always missing - minimal helper for instrumenting (clojure.spec.alpha/valid?) with more verbose output.
+This should be treated as debug facility and not be enabled on production by default - especially, when there are spec/valid? statements expected to fail non-catastrophically used in performace-sensitive parts of code.
+Kudos to @github/bhb for expound library which made this little helper possible.
+My setup Following profiles.clj configuration:
+$ cat .</description>
+    </item>
+    
+    <item>
+      <title>burp_exporter</title>
+      <link>https://slawekgonet.pl/posts/burp-exporter/</link>
+      <pubDate>Tue, 03 Mar 2020 21:12:17 +0100</pubDate>
+      
+      <guid>https://slawekgonet.pl/posts/burp-exporter/</guid>
+      <description>Prometheus exporter for BURP backup program burp written in Python.
+burp_exporter operates directly on BURP spool directory thus has to be running on the same machine as server, but does not require complex configuration as a client of monitor protocol.
+See burp_exporter on GitHub for more info.</description>
+    </item>
+    
+    <item>
       <title>CNC Router - Part 2: Building hardware</title>
       <link>https://slawekgonet.pl/posts/cnc-router-p2/</link>
       <pubDate>Mon, 06 Jan 2020 21:28:29 +0100</pubDate>
