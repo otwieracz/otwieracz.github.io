@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Sławek Gonet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Jan 2020 21:28:29 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2020 20:52:03 +0100</lastBuildDate>
     
 	<atom:link href="https://slawekgonet.pl/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CNC Router - Part 3: Testing</title>
+      <link>https://slawekgonet.pl/posts/cnc-router-p3/</link>
+      <pubDate>Sun, 08 Mar 2020 20:52:03 +0100</pubDate>
+      
+      <guid>https://slawekgonet.pl/posts/cnc-router-p3/</guid>
+      <description>Adding &amp;ldquo;backplate&amp;rdquo; reinforcements As expected, so-called backplate was showing too much deflection to be acceptable - quick fix was to add L-sections on both of its sides, preventing bending when loaded. Backplate L-sections reinforcements
+Wiring electronics Based on All-metal 3D Printer experiences, single electronics cabinet containing all components is not the best solution. With everything packed so tight cooling is problematic and while maintenance is already difficult, debugging is simply impossible.</description>
+    </item>
     
     <item>
       <title>CNC Router - Part 2: Building hardware</title>
