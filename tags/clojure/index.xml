@@ -18,10 +18,10 @@
       
       <guid>https://slawekgonet.pl/posts/spec-debug/</guid>
       <description>Debug helper which I&#39;ve been always missing - minimal helper for instrumenting (clojure.spec.alpha/valid?) with more verbose output.
-This should be treated as debug facility and not be enabled on production by default - especially, when there are spec/valid? statements expected to fail non-catastrophically used in performace-sensitive parts of code.
+This should be treated as debug facility and not be enabled on production by default - especially, when there are spec/valid? statements expected to fail non-catastrophically used in performance-sensitive parts of code.
 Kudos to @github/bhb for expound library which made this little helper possible.
 My setup Following profiles.clj configuration:
-$ cat .</description>
+$ cat .lein/profiles.clj {:user {:dependencies [[org.</description>
     </item>
     
     <item>
@@ -30,7 +30,7 @@ $ cat .</description>
       <pubDate>Thu, 14 Nov 2019 23:29:10 +0100</pubDate>
       
       <guid>https://slawekgonet.pl/posts/clj-grpc/</guid>
-      <description>When it comes to gRPC in Clojure, there is (what seem like) great library clojusc/protobuf. Unfortunately, for someone without any past gRPC experience, it has quite steep learning curve as it&#39;s difficult to relate it directly to official Java documenation available on https://grpc.io.
+      <description>When it comes to gRPC in Clojure, there is (what seem like) great library clojusc/protobuf. Unfortunately, for someone without any past gRPC experience, it has quite steep learning curve as it&#39;s difficult to relate it directly to official Java documentation available on https://grpc.io.
 I have created clj-grpc partly as a gRPC learning exercise, but mainly to use it in one of our projects in Emergynt. I tried not to reinvent any wheels in process, but just provide hassle-free experience without unnecessary Java interop while strongly reassembling workflow from well documented Java bindings.</description>
     </item>
     

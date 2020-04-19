@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://slawekgonet.pl/posts/mystere-iv-force-feedback/</loc>
+    <lastmod>2020-04-19T15:11:25+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://slawekgonet.pl/posts/</loc>
+    <lastmod>2020-04-19T15:11:25+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://slawekgonet.pl/</loc>
+    <lastmod>2020-04-19T15:11:25+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://slawekgonet.pl/tags/cnc-router/</loc>
     <lastmod>2020-03-08T20:52:03+01:00</lastmod>
   </url>
@@ -14,16 +29,6 @@
   
   <url>
     <loc>https://slawekgonet.pl/tags/hardware/</loc>
-    <lastmod>2020-03-08T20:52:03+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://slawekgonet.pl/posts/</loc>
-    <lastmod>2020-03-08T20:52:03+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://slawekgonet.pl/</loc>
     <lastmod>2020-03-08T20:52:03+01:00</lastmod>
   </url>
   

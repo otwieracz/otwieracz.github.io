@@ -17,9 +17,7 @@
       <pubDate>Wed, 25 Dec 2019 22:33:38 +0100</pubDate>
       
       <guid>https://slawekgonet.pl/posts/cnc-router-p1/</guid>
-      <description>Design of lightweight CNC router rebuilt from all-metal 3D Printer.
- Design Major design criteria for CNC router were directly influenced by lessons learned from All-metal 3D Printer
- FDM printer are slow, it&#39;s worth sacrificing Z travel for additional rigidity. Use single motor for each axis to guarantee squareness after homing. As this is still research slash fun project, keep costs low by reusing as many parts as possible. Keep it manufacture-able with tools I have, but try limiting places where it will require tuning.</description>
+      <description>Design Major design criteria for CNC router were directly influenced by lessons learned from All-metal 3D Printer  FDM printer are slow, it&#39;s worth sacrificing Z travel for additional rigidity. Use single motor for each axis to guarantee squareness after homing. As this is still research slash fun project, keep costs low by reusing as many parts as possible. Keep it manufacture-able with tools I have, but try limiting places where it will require tuning.</description>
     </item>
     
     <item>
@@ -28,10 +26,7 @@
       <pubDate>Mon, 18 Feb 2019 22:14:25 +0100</pubDate>
       
       <guid>https://slawekgonet.pl/posts/rottefella-chili-tour-throw/</guid>
-      <description>Tour-throw is common name for simple way of loosening spring tension in telemark ski bindings, especially useful for long tours over flat terrains.
-Soon after publishing replacement tour-throw heel levers for my G3 Targa Telemark Bindings on Thingiverse I&#39;ve been asked to design and manufacture similar part to Rottefella Chili bindings, which do not come with such feature out of the box.
-Test part
-By coincidence, I&#39;ve been temporarily in possession of the exact binding model client was asking for, so there was no back-and-forth shipping required.</description>
+      <description>Tour-throw is common name for simple way of loosening spring tension in telemark ski bindings, especially useful for long tours over flat terrains. Soon after publishing replacement tour-throw heel levers for my G3 Targa Telemark Bindings on Thingiverse I&#39;ve been asked to design and manufacture similar part to Rottefella Chili bindings, which do not come with such feature out of the box.      Finished part Design was pretty straightforward, but required few iterations to ensure that under rapid disengagement, bottom joint won&#39;t bend and disconnect from slot in other half of heel lever, causing increasing loads and failure.</description>
     </item>
     
     <item>
@@ -40,9 +35,7 @@ By coincidence, I&#39;ve been temporarily in possession of the exact binding mod
       <pubDate>Sun, 11 Nov 2018 10:30:10 +0100</pubDate>
       
       <guid>https://slawekgonet.pl/posts/all-metal-3d-printer/</guid>
-      <description>Back in 2017 there were no cheap-and-good 3D printer readily available on the market. Basically all that was available were budget Prusa clones, but neither rigid nor especially cheap. That&#39;s why I started designing my own construction of heavy-weight all-metal FDM 3D printer with some lightweight CNC routing in mind.
-As it turned out, it was rather nice 3D printer but not very practical CNC router.
-NOTE: This is post-factum description of historical project, so it&#39;s already known how it turned out.</description>
+      <description>Building all-metal 3D printer Back in 2017 there were no cheap-and-good 3D printer readily available on the market. Basically all that was available were budget Prusa clones, but neither rigid nor especially cheap. That&#39;s why I started designing my own construction of heavy-weight all-metal FDM 3D printer with some lightweight CNC routing in mind. As it turned out, it was rather nice 3D printer but not very practical CNC router.</description>
     </item>
     
   </channel>

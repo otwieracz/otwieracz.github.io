@@ -1,0 +1,37 @@
+@use "vars";
+
+.content {
+  display: flex;
+
+  flex-direction: column;
+  /* big screens */
+  @media all and (min-width: vars.$small-screen) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  margin: 2rem 2rem;
+  width: calc(100% - 4rem); /* compensate for margin */
+
+  h1 {
+    font-family: vars.$serfi-font-stack;
+  }
+
+  .column,
+  aside,
+  article {
+    font-size: 1rem;
+    /* big screens */
+    @media all and (min-width: vars.$small-screen) {
+      width: 48%;
+    }
+
+    /* small screens */
+    @media all and (max-width: vars.$small-screen) {
+      /* separate columns (now rows) */
+      padding-bottom: 3rem;
+      border-bottom: 1px solid #000;
+      margin-bottom: 3rem;
+    }
+  }
+}
