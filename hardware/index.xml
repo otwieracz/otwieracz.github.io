@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardware on Sławek Gonet</title>
+    <link>https://slawekgonet.pl/hardware/</link>
+    <description>Recent content in Hardware on Sławek Gonet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://slawekgonet.pl/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CNC Router v1</title>
+      <link>https://slawekgonet.pl/hardware/cnc-router-v1/</link>
+      <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://slawekgonet.pl/hardware/cnc-router-v1/</guid>
+      <description>CNC-Router v1 (2020) Design Designing overall construction based on hardware left from all-metal 3D printer.             
+Mechanical construction Building V1 of new CNC-Router. Some design issues are becoming clearly visible - X axis rigidity in reality does not exist, 20mm linear shafts are really not rigid enough without any support at that length.
+Some parts were made using to-be-disassembled 3D printer.</description>
+    </item>
+    
+    <item>
+      <title>Dassault Mystère Joystick</title>
+      <link>https://slawekgonet.pl/hardware/dassault-mystere-joystick/</link>
+      <pubDate>Sun, 19 Apr 2020 15:11:25 +0100</pubDate>
+      
+      <guid>https://slawekgonet.pl/hardware/dassault-mystere-joystick/</guid>
+      <description>PC joystick built from French fighter scrap parts Design and build of PC joystick around what was once (possibly) a part of old Dassault&amp;rsquo;s fighter jet.
+Original photos of so-called &amp;ldquo;French Fighter&amp;rdquo; joystick.                  Point-of-View controller                  Design and work in progress                                          Completed controller          </description>
+    </item>
+    
+    <item>
+      <title>Tour-throw for Rottefella Chili</title>
+      <link>https://slawekgonet.pl/hardware/rottefella-chili-tour-throw/</link>
+      <pubDate>Mon, 18 Feb 2019 22:14:25 +0100</pubDate>
+      
+      <guid>https://slawekgonet.pl/hardware/rottefella-chili-tour-throw/</guid>
+      <description>Tour-throw is common name for simple way of loosening spring tension in telemark ski bindings, especially useful for long tours over flat terrains. This is an addon to Rotefella Chili telemark bindings, which out of the box only include single position heel lever.
+                   </description>
+    </item>
+    
+    <item>
+      <title>All-metal 3D printer</title>
+      <link>https://slawekgonet.pl/hardware/all-metal-3d-printer/</link>
+      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://slawekgonet.pl/hardware/all-metal-3d-printer/</guid>
+      <description>All-metal 3D Printer Printer design which tried to be more rigid and cheaper than what was then available on market.
+Design          Assembly                              Printing and milling              </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>liberator-swagger - Sławek Gonet</title>
+    <meta property="og:title" content="liberator-swagger - Sławek Gonet">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="Generate Swagger documentation from Liberator resources with Spec">
+      <meta property="og:description" content="Generate Swagger documentation from Liberator resources with Spec">
+      
+    
+
+    
+    
+    <meta name="twitter:image" content="https://img.shields.io/clojars/v/liberator-swagger.svg">
+    
+    
+
+    
+
+    
+    
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/fontawesome-free-5.13.0-web/css/all.css">
+
+  </head>
+
+  
+  <body class="software">
+    <header class="masthead">
+      <h1><a href="/">Sławek Gonet</a></h1>
+
+
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" hidden/>
+  <label id="menu-label" for="menu-check" class="unselectable" hidden>
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  <li><a href="/">About me</a></li>
+  
+  <li><a href="/hardware">Hardware</a></li>
+  
+  <li><a href="/software">Software</a></li>
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>liberator-swagger</h1>
+
+<h3>
+  2019-07-08</h3>
+<hr>
+
+
+      </header>
+
+
+
+
+
+<p><img src="https://img.shields.io/clojars/v/liberator-swagger.svg" alt="liberator-swagger"></p>
+<p>Swagger become de-facto standard for REST API documentation, so it was obvious choice for describing <code>liberator</code> resources I was exposing in one of Emergynt projects. There is awesome <a href="https://github.com/metosin/spec-tools/blob/master/docs/05_swagger.md">metosin/spec-tools</a> library enabling generation of Swagger definitions from Spec.</p>
+<p>It seemed like good fit to merge <code>liberator</code> with <code>spec-tools</code>:</p>
+<ul>
+<li>Documentation is written where inside resource definition, keeping code well organized and easy to understand.</li>
+<li>Various handlers, like <code>handle-not-found</code> or <code>handle-malformed</code> can be generated automatically for meaningful error messages.</li>
+</ul>
+<p>See <a href="http://github.com/otwieracz/liberator-swagger">liberator-swagger on GitHub</a> for more info.</p>
+
+
+
+  <footer>
+  
+  
+
+  
+  <hr>
+  <div class="copyright">© <a href="https://slawekgonet.pl">Slawomir Gonet</a> 2021</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

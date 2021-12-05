@@ -6,18 +6,14 @@
     <description>Recent content in Clojure on Sławek Gonet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Mar 2020 23:29:10 +0100</lastBuildDate>
-    
-	<atom:link href="https://slawekgonet.pl/tags/clojure/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 05 Mar 2020 23:29:10 +0100</lastBuildDate><atom:link href="https://slawekgonet.pl/tags/clojure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>spec-debug</title>
-      <link>https://slawekgonet.pl/posts/spec-debug/</link>
+      <link>https://slawekgonet.pl/software/spec-debug/</link>
       <pubDate>Thu, 05 Mar 2020 23:29:10 +0100</pubDate>
       
-      <guid>https://slawekgonet.pl/posts/spec-debug/</guid>
-      <description>Debug helper which I&#39;ve been always missing - minimal helper for instrumenting (clojure.spec.alpha/valid?) with more verbose output.
+      <guid>https://slawekgonet.pl/software/spec-debug/</guid>
+      <description>Debug helper which I&amp;rsquo;ve been always missing - minimal helper for instrumenting (clojure.spec.alpha/valid?) with more verbose output.
 This should be treated as debug facility and not be enabled on production by default - especially, when there are spec/valid? statements expected to fail non-catastrophically used in performance-sensitive parts of code.
 Kudos to @github/bhb for expound library which made this little helper possible.
 My setup Following profiles.clj configuration:
@@ -26,20 +22,20 @@ $ cat .lein/profiles.clj {:user {:dependencies [[org.</description>
     
     <item>
       <title>clj-grpc</title>
-      <link>https://slawekgonet.pl/posts/clj-grpc/</link>
+      <link>https://slawekgonet.pl/software/clj-grpc/</link>
       <pubDate>Thu, 14 Nov 2019 23:29:10 +0100</pubDate>
       
-      <guid>https://slawekgonet.pl/posts/clj-grpc/</guid>
-      <description>When it comes to gRPC in Clojure, there is (what seem like) great library clojusc/protobuf. Unfortunately, for someone without any past gRPC experience, it has quite steep learning curve as it&#39;s difficult to relate it directly to official Java documentation available on https://grpc.io.
+      <guid>https://slawekgonet.pl/software/clj-grpc/</guid>
+      <description>When it comes to gRPC in Clojure, there is (what seem like) great library clojusc/protobuf. Unfortunately, for someone without any past gRPC experience, it has quite steep learning curve as it&amp;rsquo;s difficult to relate it directly to official Java documentation available on https://grpc.io.
 I have created clj-grpc partly as a gRPC learning exercise, but mainly to use it in one of our projects in Emergynt. I tried not to reinvent any wheels in process, but just provide hassle-free experience without unnecessary Java interop while strongly reassembling workflow from well documented Java bindings.</description>
     </item>
     
     <item>
       <title>liberator-swagger</title>
-      <link>https://slawekgonet.pl/posts/liberator-swagger/</link>
+      <link>https://slawekgonet.pl/software/liberator-swagger/</link>
       <pubDate>Mon, 08 Jul 2019 23:39:10 +0200</pubDate>
       
-      <guid>https://slawekgonet.pl/posts/liberator-swagger/</guid>
+      <guid>https://slawekgonet.pl/software/liberator-swagger/</guid>
       <description>Swagger become de-facto standard for REST API documentation, so it was obvious choice for describing liberator resources I was exposing in one of Emergynt projects. There is awesome metosin/spec-tools library enabling generation of Swagger definitions from Spec.
 It seemed like good fit to merge liberator with spec-tools:
  Documentation is written where inside resource definition, keeping code well organized and easy to understand. Various handlers, like handle-not-found or handle-malformed can be generated automatically for meaningful error messages.</description>
@@ -47,10 +43,10 @@ It seemed like good fit to merge liberator with spec-tools:
     
     <item>
       <title>clj-systemd</title>
-      <link>https://slawekgonet.pl/posts/clj-systemd/</link>
+      <link>https://slawekgonet.pl/software/clj-systemd/</link>
       <pubDate>Mon, 06 Aug 2018 23:29:10 +0200</pubDate>
       
-      <guid>https://slawekgonet.pl/posts/clj-systemd/</guid>
+      <guid>https://slawekgonet.pl/software/clj-systemd/</guid>
       <description>Simple wrapper on top of thjomnx/java-systemd for Clojure, only partially completed.
 See clj-systemd on GitHub for more info.</description>
     </item>

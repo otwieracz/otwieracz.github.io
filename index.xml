@@ -1,42 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sławek Gonet</title>
+    <title>About on Sławek Gonet</title>
     <link>https://slawekgonet.pl/</link>
-    <description>Recent content on Sławek Gonet</description>
+    <description>Recent content in About on Sławek Gonet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2020 15:11:25 +0100</lastBuildDate>
-    
-	<atom:link href="https://slawekgonet.pl/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 10 Jan 2020 22:50:56 +0100</lastBuildDate><atom:link href="https://slawekgonet.pl/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Dassault Mystère Joystick</title>
-      <link>https://slawekgonet.pl/posts/dassault-mystere-joystick/</link>
-      <pubDate>Sun, 19 Apr 2020 15:11:25 +0100</pubDate>
+      <title>CNC Router v1</title>
+      <link>https://slawekgonet.pl/hardware/cnc-router-v1/</link>
+      <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://slawekgonet.pl/posts/dassault-mystere-joystick/</guid>
-      <description>Electronics - POV switch --   PC joystick built from French fighter scrap parts Design and build of PC joystick around what was once (possibly) a part of old Dassault&#39;s fighter jet.      Why Dassault Mystere? (Original photo from seller offer)
-This project actually started many years ago, when I managed to purchase what been told was &#34;Joystick from old French fighter plane&#34;. Back in the day I&#39;ve planned to use it as a base for upgrade of Logitech WingMan Force 3D - but project somehow got stuck and finally forgotten.</description>
+      <guid>https://slawekgonet.pl/hardware/cnc-router-v1/</guid>
+      <description>CNC-Router v1 (2020) Design Designing overall construction based on hardware left from all-metal 3D printer.             
+Mechanical construction Building V1 of new CNC-Router. Some design issues are becoming clearly visible - X axis rigidity in reality does not exist, 20mm linear shafts are really not rigid enough without any support at that length.
+Some parts were made using to-be-disassembled 3D printer.</description>
     </item>
     
     <item>
-      <title>CNC Router - Part 3: Testing</title>
-      <link>https://slawekgonet.pl/posts/cnc-router-p3/</link>
-      <pubDate>Sun, 08 Mar 2020 20:52:03 +0100</pubDate>
+      <title>Dassault Mystère Joystick</title>
+      <link>https://slawekgonet.pl/hardware/dassault-mystere-joystick/</link>
+      <pubDate>Sun, 19 Apr 2020 15:11:25 +0100</pubDate>
       
-      <guid>https://slawekgonet.pl/posts/cnc-router-p3/</guid>
-      <description>Adding &amp;#34;backplate&amp;#34; reinforcements As expected, so-called backplate was showing too much deflection to be acceptable - quick fix was to add L-sections on both of its sides, preventing bending when loaded.    Wiring electronics   Import BigTreeTech SKR1.3 acting as a Smoothieware host Based on All-metal 3D printer experiences, single electronics cabinet containing all components is not the best solution. With everything packed so tight cooling is problematic and while maintenance is already difficult, debugging is simply impossible.</description>
+      <guid>https://slawekgonet.pl/hardware/dassault-mystere-joystick/</guid>
+      <description>PC joystick built from French fighter scrap parts Design and build of PC joystick around what was once (possibly) a part of old Dassault&amp;rsquo;s fighter jet.
+Original photos of so-called &amp;ldquo;French Fighter&amp;rdquo; joystick.                  Point-of-View controller                  Design and work in progress                                          Completed controller          </description>
     </item>
     
     <item>
       <title>spec-debug</title>
-      <link>https://slawekgonet.pl/posts/spec-debug/</link>
+      <link>https://slawekgonet.pl/software/spec-debug/</link>
       <pubDate>Thu, 05 Mar 2020 23:29:10 +0100</pubDate>
       
-      <guid>https://slawekgonet.pl/posts/spec-debug/</guid>
-      <description>Debug helper which I&#39;ve been always missing - minimal helper for instrumenting (clojure.spec.alpha/valid?) with more verbose output.
+      <guid>https://slawekgonet.pl/software/spec-debug/</guid>
+      <description>Debug helper which I&amp;rsquo;ve been always missing - minimal helper for instrumenting (clojure.spec.alpha/valid?) with more verbose output.
 This should be treated as debug facility and not be enabled on production by default - especially, when there are spec/valid? statements expected to fail non-catastrophically used in performance-sensitive parts of code.
 Kudos to @github/bhb for expound library which made this little helper possible.
 My setup Following profiles.clj configuration:
@@ -45,49 +43,31 @@ $ cat .lein/profiles.clj {:user {:dependencies [[org.</description>
     
     <item>
       <title>burp_exporter</title>
-      <link>https://slawekgonet.pl/posts/burp-exporter/</link>
+      <link>https://slawekgonet.pl/software/burp-exporter/</link>
       <pubDate>Tue, 03 Mar 2020 21:12:17 +0100</pubDate>
       
-      <guid>https://slawekgonet.pl/posts/burp-exporter/</guid>
+      <guid>https://slawekgonet.pl/software/burp-exporter/</guid>
       <description>Prometheus exporter for BURP backup program burp written in Python.
 burp_exporter operates directly on BURP spool directory thus has to be running on the same machine as server, but does not require complex configuration as a client of monitor protocol.
 See burp_exporter on GitHub for more info.</description>
     </item>
     
     <item>
-      <title>CNC Router - Part 2: Building hardware</title>
-      <link>https://slawekgonet.pl/posts/cnc-router-p2/</link>
-      <pubDate>Mon, 06 Jan 2020 21:28:29 +0100</pubDate>
-      
-      <guid>https://slawekgonet.pl/posts/cnc-router-p2/</guid>
-      <description>Tracing holes with 3D printer Biggest difference in new design as compared to 3D printer is X and Z carriage made from two 4mm thick steel plates. This makes for really simple, fast and what&#39;s most important *straight* assembly - but only under circumstance that all holes will be drilled precisely at locations. Toolpaths were generated with Fusion 360 manufacturing module.       3D printer executing it&amp;#39;s last GCODE before rebuild Even slight imprecision between holes within one plate will cause linear bearings on shafts to bind and things to go out of parallel in general - with no way of correcting that.</description>
-    </item>
-    
-    <item>
-      <title>CNC Router - Part 1: Design</title>
-      <link>https://slawekgonet.pl/posts/cnc-router-p1/</link>
-      <pubDate>Wed, 25 Dec 2019 22:33:38 +0100</pubDate>
-      
-      <guid>https://slawekgonet.pl/posts/cnc-router-p1/</guid>
-      <description>Design Major design criteria for CNC router were directly influenced by lessons learned from All-metal 3D Printer  FDM printer are slow, it&#39;s worth sacrificing Z travel for additional rigidity. Use single motor for each axis to guarantee squareness after homing. As this is still research slash fun project, keep costs low by reusing as many parts as possible. Keep it manufacture-able with tools I have, but try limiting places where it will require tuning.</description>
-    </item>
-    
-    <item>
       <title>clj-grpc</title>
-      <link>https://slawekgonet.pl/posts/clj-grpc/</link>
+      <link>https://slawekgonet.pl/software/clj-grpc/</link>
       <pubDate>Thu, 14 Nov 2019 23:29:10 +0100</pubDate>
       
-      <guid>https://slawekgonet.pl/posts/clj-grpc/</guid>
-      <description>When it comes to gRPC in Clojure, there is (what seem like) great library clojusc/protobuf. Unfortunately, for someone without any past gRPC experience, it has quite steep learning curve as it&#39;s difficult to relate it directly to official Java documentation available on https://grpc.io.
+      <guid>https://slawekgonet.pl/software/clj-grpc/</guid>
+      <description>When it comes to gRPC in Clojure, there is (what seem like) great library clojusc/protobuf. Unfortunately, for someone without any past gRPC experience, it has quite steep learning curve as it&amp;rsquo;s difficult to relate it directly to official Java documentation available on https://grpc.io.
 I have created clj-grpc partly as a gRPC learning exercise, but mainly to use it in one of our projects in Emergynt. I tried not to reinvent any wheels in process, but just provide hassle-free experience without unnecessary Java interop while strongly reassembling workflow from well documented Java bindings.</description>
     </item>
     
     <item>
       <title>liberator-swagger</title>
-      <link>https://slawekgonet.pl/posts/liberator-swagger/</link>
+      <link>https://slawekgonet.pl/software/liberator-swagger/</link>
       <pubDate>Mon, 08 Jul 2019 23:39:10 +0200</pubDate>
       
-      <guid>https://slawekgonet.pl/posts/liberator-swagger/</guid>
+      <guid>https://slawekgonet.pl/software/liberator-swagger/</guid>
       <description>Swagger become de-facto standard for REST API documentation, so it was obvious choice for describing liberator resources I was exposing in one of Emergynt projects. There is awesome metosin/spec-tools library enabling generation of Swagger definitions from Spec.
 It seemed like good fit to merge liberator with spec-tools:
  Documentation is written where inside resource definition, keeping code well organized and easy to understand. Various handlers, like handle-not-found or handle-malformed can be generated automatically for meaningful error messages.</description>
@@ -95,28 +75,30 @@ It seemed like good fit to merge liberator with spec-tools:
     
     <item>
       <title>Tour-throw for Rottefella Chili</title>
-      <link>https://slawekgonet.pl/posts/rottefella-chili-tour-throw/</link>
+      <link>https://slawekgonet.pl/hardware/rottefella-chili-tour-throw/</link>
       <pubDate>Mon, 18 Feb 2019 22:14:25 +0100</pubDate>
       
-      <guid>https://slawekgonet.pl/posts/rottefella-chili-tour-throw/</guid>
-      <description>Tour-throw is common name for simple way of loosening spring tension in telemark ski bindings, especially useful for long tours over flat terrains. Soon after publishing replacement tour-throw heel levers for my G3 Targa Telemark Bindings on Thingiverse I&#39;ve been asked to design and manufacture similar part to Rottefella Chili bindings, which do not come with such feature out of the box.      Finished part Design was pretty straightforward, but required few iterations to ensure that under rapid disengagement, bottom joint won&#39;t bend and disconnect from slot in other half of heel lever, causing increasing loads and failure.</description>
+      <guid>https://slawekgonet.pl/hardware/rottefella-chili-tour-throw/</guid>
+      <description>Tour-throw is common name for simple way of loosening spring tension in telemark ski bindings, especially useful for long tours over flat terrains. This is an addon to Rotefella Chili telemark bindings, which out of the box only include single position heel lever.
+                   </description>
     </item>
     
     <item>
-      <title>All-metal 3D Printer</title>
-      <link>https://slawekgonet.pl/posts/all-metal-3d-printer/</link>
-      <pubDate>Sun, 11 Nov 2018 10:30:10 +0100</pubDate>
+      <title>All-metal 3D printer</title>
+      <link>https://slawekgonet.pl/hardware/all-metal-3d-printer/</link>
+      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://slawekgonet.pl/posts/all-metal-3d-printer/</guid>
-      <description>Building all-metal 3D printer Back in 2017 there were no cheap-and-good 3D printer readily available on the market. Basically all that was available were budget Prusa clones, but neither rigid nor especially cheap. That&#39;s why I started designing my own construction of heavy-weight all-metal FDM 3D printer with some lightweight CNC routing in mind. As it turned out, it was rather nice 3D printer but not very practical CNC router.</description>
+      <guid>https://slawekgonet.pl/hardware/all-metal-3d-printer/</guid>
+      <description>All-metal 3D Printer Printer design which tried to be more rigid and cheaper than what was then available on market.
+Design          Assembly                              Printing and milling              </description>
     </item>
     
     <item>
       <title>clj-systemd</title>
-      <link>https://slawekgonet.pl/posts/clj-systemd/</link>
+      <link>https://slawekgonet.pl/software/clj-systemd/</link>
       <pubDate>Mon, 06 Aug 2018 23:29:10 +0200</pubDate>
       
-      <guid>https://slawekgonet.pl/posts/clj-systemd/</guid>
+      <guid>https://slawekgonet.pl/software/clj-systemd/</guid>
       <description>Simple wrapper on top of thjomnx/java-systemd for Clojure, only partially completed.
 See clj-systemd on GitHub for more info.</description>
     </item>
