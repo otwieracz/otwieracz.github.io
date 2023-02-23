@@ -154,6 +154,9 @@ li .li-date {
 .colorset-a .section-header {
   color: #793327;
 }
+.colorset-a .section-header-color {
+  color: #793327;
+}
 .colorset-a .section-date {
   color: #547076;
 }
@@ -169,6 +172,9 @@ li .li-date {
   color: #f2f2f2;
 }
 .colorset-b .section-header {
+  color: #C2AE93;
+}
+.colorset-b .section-header-color {
   color: #C2AE93;
 }
 .colorset-b .section-date {
@@ -319,6 +325,7 @@ a:hover {
   text-decoration: underline;
   text-decoration-thickness: 3%;
   text-underline-offset: 8%;
+  text-decoration-color: inherit;
 }
 
 .code {
