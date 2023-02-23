@@ -1,0 +1,407 @@
+@charset "UTF-8";
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* 
+custom
+*/
+ul {
+  padding-inline-start: 0;
+}
+
+h1, h2, h3 {
+  margin-block-start: 0;
+}
+
+ul {
+  font: 1.2em iosevka;
+  list-style-position: inside;
+  padding-bottom: 0.2em;
+  /* account for character height difference to make padding seem equal on top and bottom */
+  /* bullets are within managed container */
+  /* control bullets */
+  list-style: none;
+  /* left by default */
+}
+ul li::before {
+  content: "•";
+  position: relative;
+  top: 0.075em;
+}
+ul li.active::before {
+  color: #793327;
+}
+ul li.with-description {
+  padding-left: 1em;
+  text-indent: -1em;
+  line-height: 125%;
+}
+ul .li-description {
+  font-size: 1em;
+  font-family: futura-light;
+}
+
+/* li with date */
+li .li-spacing {
+  display: none;
+}
+li .li-date {
+  display: none;
+}
+
+.li-with-date li > .li-with-date-item {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(100% - 1.75rem);
+}
+.li-with-date li > .li-with-date-item .li-spacing {
+  display: inline;
+  flex-grow: 1;
+  border-bottom: dashed 1px #eee;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 0.3em;
+}
+.li-with-date li > .li-with-date-item .li-date {
+  display: inline;
+  font-size: 0.9em;
+  margin-top: auto;
+}
+
+.menu-right ul {
+  direction: rtl;
+}
+
+.colorset-a {
+  background-color: #D6B43E;
+  color: #f2f2f2;
+}
+.colorset-a .section-header {
+  color: #793327;
+}
+.colorset-a .section-date {
+  color: #547076;
+}
+.colorset-a .content-container h1,
+.colorset-a .content-container h2,
+.colorset-a .content-container h3,
+.colorset-a .content-container h4 {
+  color: #793327;
+}
+
+.colorset-b {
+  background-color: #547076;
+  color: #f2f2f2;
+}
+.colorset-b .section-header {
+  color: #C2AE93;
+}
+.colorset-b .section-date {
+  color: #793327;
+}
+.colorset-b .content-container h1,
+.colorset-b .content-container h2,
+.colorset-b .content-container h3,
+.colorset-b .content-container h4 {
+  color: #C2AE93;
+}
+
+@font-face {
+  font-family: "futura";
+  src: url("/assets/fonts/futura.woff2") format("woff2"), url("/assets/fonts/futura.woff") format("woff"), url("/assets/fonts/fitura.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "futura-light";
+  src: url("/assets/fonts/futura-light.woff2") format("woff2"), url("/assets/fonts/futura-light.woff") format("woff"), url("/assets/fonts/fitura-light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "iosevka";
+  src: url("/assets/fonts/iosevka-light.woff2") format("woff2"), url("/assets/fonts/iosevka-light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+.justified-gallery-container {
+  background-color: #2f2f2f;
+  box-shadow: 0px 0px 2px #2f2f2f;
+  margin-bottom: 1em;
+}
+.justified-gallery-container .justified-gallery-header {
+  font-size: 1.5em;
+  text-align: right;
+  margin: 0;
+  padding: 0.7em 0.4em;
+  color: #793327;
+  border-top: solid 1px #793327;
+}
+
+/* globals */
+body {
+  margin: 0px;
+  background-color: #D6B43E;
+  font-family: futura-light;
+  overflow-x: hidden;
+}
+
+#root-container {
+  display: flex;
+  color: #f2f2f2;
+}
+
+.section-header {
+  font-family: futura;
+  letter-spacing: 1px;
+  margin-top: calc(1.75rem - 0.3em);
+  /* account for bottom part of `g` */
+  margin-bottom: calc(1.75rem - 0.3em);
+  /* account for bottom part of `g` */
+}
+
+.section-date {
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 1.3em;
+  text-align: right;
+  height: 1em;
+  margin-top: -0.5em;
+  margin-bottom: -0.5em;
+}
+
+.left-section {
+  min-height: 100vh;
+  position: relative;
+  padding-top: 100px;
+  padding-right: 1.75rem;
+}
+.left-section .section-header {
+  text-align: right;
+}
+
+.right-section {
+  padding: 100px 1.75rem;
+  min-height: 100vh;
+  height: fit-content;
+}
+.right-section hr {
+  /* account for right-section padding, move hr back to left edge of the screen */
+  margin-left: -1.75rem;
+}
+.right-section .section-header.right {
+  text-align: right;
+}
+
+.content-container {
+  margin: 1.75rem 0;
+  height: fit-content;
+}
+.content-container h1,
+.content-container h2,
+.content-container h3,
+.content-container h4 {
+  font-family: iosevka;
+}
+.content-container ul {
+  /* display all text lowercased, account for change in optical heigh */
+  text-transform: lowercase;
+  margin: -0.4em 0;
+}
+.content-container ul li {
+  margin: 0.2em 0;
+}
+.content-container h2,
+.content-container h3 {
+  margin-top: -0.3em;
+  margin-bottom: 0.5em;
+}
+.content-container * + h2 {
+  margin-top: 0.6em;
+}
+.content-container * + h3 {
+  margin-top: 1em;
+}
+.content-container p {
+  font-size: larger;
+  max-width: 40em;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  background-color: #793327;
+}
+
+/* links */
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3%;
+  text-underline-offset: 8%;
+}
+
+.code {
+  font-family: iosevka;
+  font-size: 0.8em;
+}
+
+a.code {
+  font-size: 0.9em;
+  color: #793327;
+  background-color: antiquewhite;
+  border-radius: 4px;
+  padding: 0em 0.2em 0.1em 0.2em;
+  border: 1px solid #793327;
+}
+
+.pdfobject-container {
+  height: 120vh;
+}
+
+body {
+  font-size: 1em;
+}
+
+#root-container {
+  flex-direction: column;
+  width: 100%;
+}
+
+.section-header {
+  font-size: 2.5em;
+}
+
+.section-header.back {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.section-header.back::before {
+  content: "←";
+  font-size: 0.6em;
+  margin-top: 0.7em;
+  margin-left: 1em;
+}
+
+.left-section {
+  width: 100%;
+  box-shadow: 0px 0px 16px #793327;
+}
+
+.right-section hr {
+  /* account for right-section padding, move hr back to left edge of the screen */
+  margin-left: -1.75rem;
+}
+
+.content-container {
+  margin-top: 2.5em; /* account for height difference in lowercase fonts, make margins uniform */
+}
+.content-container h2 {
+  font-size: 1.3em;
+}
+.content-container h3 {
+  font-size: 1em;
+}
+.content-container p {
+  padding-bottom: 1.75rem;
+}
+
+/* no dates on narrow mobile screens */
+.li-with-date li > .li-with-date-item {
+  display: inline;
+}
+.li-with-date li > .li-with-date-item .li-spacing {
+  display: none;
+}
+.li-with-date li > .li-with-date-item .li-date {
+  display: none;
+}
+
+hr {
+  width: 100vw;
+}
+
+/*# sourceMappingURL=mobile.css.map */
