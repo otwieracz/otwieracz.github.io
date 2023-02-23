@@ -346,6 +346,11 @@ a.code {
   height: 120vh;
 }
 
+html {
+  /* scroll to anchor smoothly to make it more intuitive that previous menu is available above */
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 1em;
 }
