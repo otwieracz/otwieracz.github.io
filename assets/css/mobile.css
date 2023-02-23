@@ -88,7 +88,7 @@ h1, h2, h3 {
 }
 
 ul {
-  font: 1.2em iosevka;
+  font: 1.2em iosevka-light;
   list-style-position: inside;
   padding-bottom: 0.2em;
   /* account for character height difference to make padding seem equal on top and bottom */
@@ -200,10 +200,14 @@ li .li-date {
   font-style: normal;
 }
 @font-face {
-  font-family: "iosevka";
+  font-family: "iosevka-light";
   src: url("/assets/fonts/iosevka-light.woff2") format("woff2"), url("/assets/fonts/iosevka-light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
+}
+@font-face {
+  font-family: "iosevka-regular";
+  src: url("/assets/fonts/iosevka-regular.woff2") format("woff2"), url("/assets/fonts/iosevka-regular.ttf") format("truetype");
 }
 .justified-gallery-container {
   background-color: #2f2f2f;
@@ -233,7 +237,8 @@ body {
 }
 
 .section-header {
-  font-family: futura;
+  font-family: iosevka-regular;
+  font-weight: 100;
   letter-spacing: 1px;
   margin-top: calc(1.75rem - 0.3em);
   /* account for bottom part of `g` */
@@ -283,7 +288,7 @@ body {
 .content-container h2,
 .content-container h3,
 .content-container h4 {
-  font-family: iosevka;
+  font-family: iosevka-regular;
 }
 .content-container ul {
   /* display all text lowercased, account for change in optical heigh */
@@ -329,7 +334,7 @@ a:hover {
 }
 
 .code {
-  font-family: iosevka;
+  font-family: iosevka-light;
   font-size: 0.8em;
 }
 
@@ -346,6 +351,17 @@ a.code {
   height: 120vh;
 }
 
+/* hacks */
+/* Safari only */
+@supports (background: -webkit-named-image(i)) {
+  .content-container h1,
+  .content-container h2,
+  .content-container h3,
+  .content-container h4 {
+    /* fix discrepancies in letter spacing in safari */
+    letter-spacing: -1px;
+  }
+}
 html {
   /* scroll to anchor smoothly to make it more intuitive that previous menu is available above */
   scroll-behavior: smooth;
