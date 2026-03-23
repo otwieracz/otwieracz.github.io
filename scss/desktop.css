@@ -93,6 +93,7 @@ ul {
   list-style: none;
 }
 ul li::before {
+  margin-right: 0.3em;
   content: "•";
   position: relative;
   top: 0.075em;
