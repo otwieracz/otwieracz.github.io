@@ -93,7 +93,7 @@ ul {
   list-style: none;
 }
 ul li::before {
-  margin-right: 0.3em;
+  margin-inline-end: 0.3em;
   content: "•";
   position: relative;
   top: 0.075em;
@@ -305,7 +305,6 @@ body {
 }
 .content-container p {
   font-size: larger;
-  max-width: 40em;
 }
 
 hr {
