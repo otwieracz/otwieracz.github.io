@@ -1,0 +1,69 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>sławek gonet | spec-debug</title><link rel=stylesheet media="screen and (min-width: 1200px)" href=/scss/desktop.css><link rel=stylesheet media="screen and (max-width: 1200px)" href=/scss/mobile.css><link rel=stylesheet href=/vendor/justified-gallery/justifiedGallery.min.css><link rel=stylesheet href=/vendor/lightbox/css/lightbox.min.css><script src=/js/jquery-3.6.3.min.js></script><script src=/vendor/justified-gallery/jquery.justifiedGallery.min.js></script><script src=/vendor/lightbox/js/lightbox.min.js></script><script src=/vendor/pdfobject/pdfobject.min.js></script></head><body class=mobile-bgcolor-a><div id=root-container><div class=desktop-only><div class="left-section colorset-a"><div class="section-header back"><a href=/ class=section-header-home>sławek gonet</a>&nbsp;works</div><hr><div class="menu-right content-container li-with-date"><ul><li class=hardware><span class=li-with-date-item><a href=/works/maho-mh300m-rebuild/#content>maho mh300m rebuild</a>
+<span class=li-spacing></span>
+<span class=li-date>2024-10-01</span></span></li><li class=software><span class=li-with-date-item><a href=/works/maho-feed-controller/#content>maho feed controller</a>
+<span class=li-spacing></span>
+<span class=li-date>2024-09-05</span></span></li><li class=software><span class=li-with-date-item><a href=/works/portfel-rs/#content>portfel-rs</a>
+<span class=li-spacing></span>
+<span class=li-date>2023-12-10</span></span></li><li class=hardware><span class=li-with-date-item><a href=/works/ksi%C4%99%C5%BCyc/#content>Księżyc</a>
+<span class=li-spacing></span>
+<span class=li-date>2023-06-01</span></span></li><li class=hardware><span class=li-with-date-item><a href=/works/landroid-spikes/#content>Landroid Spikes</a>
+<span class=li-spacing></span>
+<span class=li-date>2023-05-02</span></span></li><li class=hardware><span class=li-with-date-item><a href=/works/racheting-screwdriver/#content>Racheting Screwdriver</a>
+<span class=li-spacing></span>
+<span class=li-date>2023-04-01</span></span></li><li class=hardware><span class=li-with-date-item><a href=/works/caliber-chuck/#content>Caliber Chuck</a>
+<span class=li-spacing></span>
+<span class=li-date>2022-10-01</span></span></li><li class=hardware><span class=li-with-date-item><a href=/works/cnc-router/#content>CNC Router</a>
+<span class=li-spacing></span>
+<span class=li-date>2022-03-15</span></span></li><li class=software><span class=li-with-date-item><a href=/works/fusionsolar-rs/#content>fusionsolar-rs</a>
+<span class=li-spacing></span>
+<span class=li-date>2022-02-25</span></span></li><li class=hardware><span class=li-with-date-item><a href=/works/dassault-myst%C3%A8re-joystick/#content>dassault mystère joystick</a>
+<span class=li-spacing></span>
+<span class=li-date>2020-04-19</span></span></li><li class=software><span class=li-with-date-item><a href=/works/burp_exporter/#content>burp_exporter</a>
+<span class=li-spacing></span>
+<span class=li-date>2020-03-04</span></span></li><li class="software active"><span class=li-with-date-item><a href=/works/spec-debug/#content>spec-debug</a>
+<span class=li-spacing></span>
+<span class=li-date>2020-03-03</span></span></li><li class=software><span class=li-with-date-item><a href=/works/clj-grpc/#content>clj-grpc</a>
+<span class=li-spacing></span>
+<span class=li-date>2019-11-12</span></span></li><li class=software><span class=li-with-date-item><a href=/works/liberator-swagger/#content>liberator-swagger</a>
+<span class=li-spacing></span>
+<span class=li-date>2019-06-12</span></span></li><li class=hardware><span class=li-with-date-item><a href=/works/rottefella-chili-tour-throw/#content>Rottefella Chili Tour-throw</a>
+<span class=li-spacing></span>
+<span class=li-date>2019-02-18</span></span></li><li class=software><span class=li-with-date-item><a href=/works/backuppc_exporter/#content>backuppc_exporter</a>
+<span class=li-spacing></span>
+<span class=li-date>2018-11-16</span></span></li><li class=software><span class=li-with-date-item><a href=/works/clj-systemd/#content>clj-systemd</a>
+<span class=li-spacing></span>
+<span class=li-date>2018-08-02</span></span></li></ul></div></div><div class="right-section colorset-b"><div class=section-date>2020-03-03</div><div class="section-header right">spec-debug</div><hr class=left-overflow><div class="content-container article-body"><p><a class=code href=https://github.com/otwieracz/spec-debug>https://github.com/otwieracz/spec-debug</a></p><p>spec-debug is a small Clojure library that instruments <code>clojure.spec.alpha/valid?</code> to produce verbose, human-readable error output when a spec check fails. It solves a common frustration in Clojure development: when a <code>:pre</code> or <code>:post</code> condition backed by <code>spec/valid?</code> fails, the default error message tells you that validation failed but gives no indication of why. You end up manually swapping <code>valid?</code> calls for <code>explain</code> calls across your codebase just to track down the problem.</p><p>With spec-debug enabled, every failing <code>spec/valid?</code> call automatically triggers the expound library to print a detailed breakdown of exactly which part of the data violated which spec. The output pinpoints the offending value and shows the full spec chain, making it immediately clear what went wrong. This is especially valuable with deeply nested specs where the cause of failure is not obvious from the input data alone.</p><p>The library is designed to be toggled on and off at runtime with <code>enable-spec-debug!</code> and <code>disable-spec-debug!</code>. When enabled, passing specs incur negligible overhead (less than 1.2x in benchmarks), so it can safely stay on during development. The performance cost only becomes significant when specs actually fail and expound generates its output, which in practice means you are already heading for an assertion error anyway.</p></div></div></div><div class=mobile-only><div class="left-section colorset-a"><div class="section-header back"><a href=/ class=section-header-home>sławek gonet</a>&nbsp;works</div><hr><div class="menu-right content-container li-with-date"><ul><li class=hardware><span class=li-with-date-item><a href=/works/maho-mh300m-rebuild/#content>maho mh300m rebuild</a>
+<span class=li-spacing></span>
+<span class=li-date>2024-10-01</span></span></li><li class=software><span class=li-with-date-item><a href=/works/maho-feed-controller/#content>maho feed controller</a>
+<span class=li-spacing></span>
+<span class=li-date>2024-09-05</span></span></li><li class=software><span class=li-with-date-item><a href=/works/portfel-rs/#content>portfel-rs</a>
+<span class=li-spacing></span>
+<span class=li-date>2023-12-10</span></span></li><li class=hardware><span class=li-with-date-item><a href=/works/ksi%C4%99%C5%BCyc/#content>Księżyc</a>
+<span class=li-spacing></span>
+<span class=li-date>2023-06-01</span></span></li><li class=hardware><span class=li-with-date-item><a href=/works/landroid-spikes/#content>Landroid Spikes</a>
+<span class=li-spacing></span>
+<span class=li-date>2023-05-02</span></span></li><li class=hardware><span class=li-with-date-item><a href=/works/racheting-screwdriver/#content>Racheting Screwdriver</a>
+<span class=li-spacing></span>
+<span class=li-date>2023-04-01</span></span></li><li class=hardware><span class=li-with-date-item><a href=/works/caliber-chuck/#content>Caliber Chuck</a>
+<span class=li-spacing></span>
+<span class=li-date>2022-10-01</span></span></li><li class=hardware><span class=li-with-date-item><a href=/works/cnc-router/#content>CNC Router</a>
+<span class=li-spacing></span>
+<span class=li-date>2022-03-15</span></span></li><li class=software><span class=li-with-date-item><a href=/works/fusionsolar-rs/#content>fusionsolar-rs</a>
+<span class=li-spacing></span>
+<span class=li-date>2022-02-25</span></span></li><li class=hardware><span class=li-with-date-item><a href=/works/dassault-myst%C3%A8re-joystick/#content>dassault mystère joystick</a>
+<span class=li-spacing></span>
+<span class=li-date>2020-04-19</span></span></li><li class=software><span class=li-with-date-item><a href=/works/burp_exporter/#content>burp_exporter</a>
+<span class=li-spacing></span>
+<span class=li-date>2020-03-04</span></span></li><li class="software active"><span class=li-with-date-item><a href=/works/spec-debug/#content>spec-debug</a>
+<span class=li-spacing></span>
+<span class=li-date>2020-03-03</span></span></li><li class=software><span class=li-with-date-item><a href=/works/clj-grpc/#content>clj-grpc</a>
+<span class=li-spacing></span>
+<span class=li-date>2019-11-12</span></span></li><li class=software><span class=li-with-date-item><a href=/works/liberator-swagger/#content>liberator-swagger</a>
+<span class=li-spacing></span>
+<span class=li-date>2019-06-12</span></span></li><li class=hardware><span class=li-with-date-item><a href=/works/rottefella-chili-tour-throw/#content>Rottefella Chili Tour-throw</a>
+<span class=li-spacing></span>
+<span class=li-date>2019-02-18</span></span></li><li class=software><span class=li-with-date-item><a href=/works/backuppc_exporter/#content>backuppc_exporter</a>
+<span class=li-spacing></span>
+<span class=li-date>2018-11-16</span></span></li><li class=software><span class=li-with-date-item><a href=/works/clj-systemd/#content>clj-systemd</a>
+<span class=li-spacing></span>
+<span class=li-date>2018-08-02</span></span></li></ul></div></div><div id=content class="right-section colorset-b"><div class=section-date>2020-03-03</div><div class="section-header right">spec-debug</div><hr class=left-overflow><div class="content-container article-body"><p><a class=code href=https://github.com/otwieracz/spec-debug>https://github.com/otwieracz/spec-debug</a></p><p>spec-debug is a small Clojure library that instruments <code>clojure.spec.alpha/valid?</code> to produce verbose, human-readable error output when a spec check fails. It solves a common frustration in Clojure development: when a <code>:pre</code> or <code>:post</code> condition backed by <code>spec/valid?</code> fails, the default error message tells you that validation failed but gives no indication of why. You end up manually swapping <code>valid?</code> calls for <code>explain</code> calls across your codebase just to track down the problem.</p><p>With spec-debug enabled, every failing <code>spec/valid?</code> call automatically triggers the expound library to print a detailed breakdown of exactly which part of the data violated which spec. The output pinpoints the offending value and shows the full spec chain, making it immediately clear what went wrong. This is especially valuable with deeply nested specs where the cause of failure is not obvious from the input data alone.</p><p>The library is designed to be toggled on and off at runtime with <code>enable-spec-debug!</code> and <code>disable-spec-debug!</code>. When enabled, passing specs incur negligible overhead (less than 1.2x in benchmarks), so it can safely stay on during development. The performance cost only becomes significant when specs actually fail and expound generates its output, which in practice means you are already heading for an assertion error anyway.</p></div></div></div></div></body></html>
