@@ -413,7 +413,7 @@ html::-webkit-scrollbar {
 }
 
 body {
-  font-size: 1em;
+  font-size: 0.95em;
 }
 
 #root-container {
@@ -422,7 +422,7 @@ body {
 }
 
 .section-header {
-  font-size: 2.5em;
+  font-size: 2.2em;
 }
 
 .mobile-bgcolor-a {
@@ -471,4 +471,15 @@ body {
 
 hr {
   width: 100vw;
+}
+
+/* hide dates on narrow screens */
+@media (max-width: 550px) {
+  .li-with-date li > .li-with-date-item {
+    display: inline;
+  }
+  .li-with-date li > .li-with-date-item .li-spacing,
+  .li-with-date li > .li-with-date-item .li-date {
+    display: none;
+  }
 }
