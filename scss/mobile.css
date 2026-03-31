@@ -357,6 +357,13 @@ body {
   flex-shrink: 0;
 }
 
+.share-links {
+  font-family: iosevka-light;
+  margin-top: 1.5em;
+  padding-bottom: 0 !important;
+  text-align: right !important;
+}
+
 hr {
   height: 1px;
   border: none;
